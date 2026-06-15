@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison & Co. — Fine Furniture</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- OVERLAY for cart -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ─── NAVIGATION ─── -->
+  <header class="header" id="header">
+    <div class="nav-brand">
+      <span class="brand-icon">✦</span>
+      <span class="brand-name">Maison <em>&amp;</em> Co.</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <path d="M16 10a4 4 0 01-8 0"/>
+      </svg>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Collection 2025</p>
+      <h1 class="hero-title reveal">Crafted for<br /><em>Timeless</em> Living</h1>
+      <p class="hero-sub reveal">Furniture that speaks in whispers, built to outlast trends.</p>
+      <a href="#products" class="btn-primary reveal">Explore the Collection</a>
+    </div>
+    <div class="hero-image-wrap reveal">
+      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80" alt="Featured sofa" class="hero-img" />
+      <div class="hero-badge">
+        <span>New</span>
+        <span>Arrivals</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE ─── -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Free Delivery Over ₹50,000</span><span class="dot">✦</span>
+      <span>Handcrafted in India</span><span class="dot">✦</span>
+      <span>10-Year Warranty</span><span class="dot">✦</span>
+      <span>Custom Orders Welcome</span><span class="dot">✦</span>
+      <span>Free Delivery Over ₹50,000</span><span class="dot">✦</span>
+      <span>Handcrafted in India</span><span class="dot">✦</span>
+      <span>10-Year Warranty</span><span class="dot">✦</span>
+      <span>Custom Orders Welcome</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ─── PRODUCTS ─── -->
+  <section class="products-section" id="products">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Our Pieces</p>
+      <h2 class="section-title">The Full Collection</h2>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-tabs reveal">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="seating">Seating</button>
+      <button class="tab" data-filter="tables">Tables</button>
+      <button class="tab" data-filter="storage">Storage</button>
+      <button class="tab" data-filter="bedroom">Bedroom</button>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+
+      <!-- Product cards injected by JS -->
+
+    </div>
+  </section>
+
+  <!-- ─── ABOUT BANNER ─── -->
+  <section class="about-banner" id="about">
+    <div class="about-img-wrap reveal">
+      <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&q=80" alt="Workshop" />
+    </div>
+    <div class="about-text reveal">
+      <p class="section-eyebrow">Our Story</p>
+      <h2>Built with<br /><em>purpose &amp; patience</em></h2>
+      <p>Every piece in the Maison &amp; Co. catalogue is designed in-house and crafted by artisans who have inherited their trade across generations. We source only sustainably certified wood and premium upholstery.</p>
+      <a href="#products" class="btn-outline">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner reveal">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h2>Visit Our Showroom</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h4>Mumbai Showroom</h4>
+          <p>14, Linking Road, Bandra West<br />Mumbai 400 050</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🕐</div>
+          <h4>Opening Hours</h4>
+          <p>Monday – Saturday<br />10 AM – 8 PM</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h4>Call Us</h4>
+          <p>+91 98200 12345<br />hello@maisonco.in</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-icon">✦</span>
+        <span class="brand-name">Maison <em>&amp;</em> Co.</span>
+        <p>Fine furniture for considered living.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Shop</h5>
+        <a href="#">Seating</a>
+        <a href="#">Tables</a>
+        <a href="#">Storage</a>
+        <a href="#">Bedroom</a>
+      </div>
+      <div class="footer-links">
+        <h5>Help</h5>
+        <a href="#">Delivery & Returns</a>
+        <a href="#">Care Guide</a>
+        <a href="#">Warranty</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-links">
+        <h5>Follow</h5>
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Maison &amp; Co. All rights reserved.</p>
+      <p>Privacy Policy · Terms of Service</p>
+    </div>
+  </footer>
+
+  <!-- ─── CART SIDEBAR ─── -->
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart <span id="cartItemCount">(0)</span></h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <p class="cart-empty">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">₹0</span>
+      </div>
+      <div class="cart-delivery">
+        <span>Delivery</span>
+        <span id="cartDelivery">Free</span>
+      </div>
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <button class="btn-primary checkout-btn">Proceed to Checkout →</button>
+    </div>
+  </aside>
+
+  <!-- ─── TOAST ─── -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
